@@ -11,14 +11,6 @@ public class ThirdPersonCam : MonoBehaviour{
 
     public float rotationSpeed;
 
-    public CameraStyle currentStyle;
-
-    public enum CameraStyle{
-        Basic,
-        Combat,
-        Tomdown
-    }
-
     void Start(){
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
