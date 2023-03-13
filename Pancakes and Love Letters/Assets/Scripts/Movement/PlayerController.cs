@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Movement")]
     [SerializeField] float moveSpeed;
-
     [SerializeField] Transform orientation;
-
     [SerializeField] float groundDrag;
 
     float horizontalInput;
     float verticalInput;
 
+    [Header("Ground")]
     [SerializeField] float playerHeight;
     [SerializeField] LayerMask whatIsGround;
     bool grounded;
 
     Vector3 moveDirection;
-
     Rigidbody rb;
 
     // Start is called before the first frame update
@@ -31,11 +30,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MyInput();
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
-        MyInput();
-
-        if(grounded)
+        if (grounded)
         {
             rb.drag = groundDrag;
         }
@@ -58,8 +56,10 @@ public class PlayerController : MonoBehaviour
 
     private void MovePlayer()
     {
+        //Get vector for the inputs
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-
+        
+        //Add force of the calculated movement vector
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
     }
 }
