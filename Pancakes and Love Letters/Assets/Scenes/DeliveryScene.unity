@@ -263,7 +263,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823230076}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe36a5e7a68dc4b40a735a21f800ee27, type: 3}
   m_Name: 
@@ -283,6 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 828855490}
   - component: {fileID: 828855491}
+  - component: {fileID: 828855492}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -324,6 +325,25 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &828855492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828855489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8133693733e37464599cd471627ce49a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 8
+  orientation: {fileID: 136133744}
+  groundDrag: 5
+  playerHeight: 2
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1025873662
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,7 +548,7 @@ GameObject:
   - component: {fileID: 2047381279}
   - component: {fileID: 2047381278}
   - component: {fileID: 2047381277}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: templand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
