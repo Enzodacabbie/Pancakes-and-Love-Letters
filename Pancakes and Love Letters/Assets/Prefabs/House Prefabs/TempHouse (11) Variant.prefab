@@ -69,7 +69,25 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a0996d3924514db45ad72dfc8503a256, type: 2}
     - target: {fileID: 919132149155446097, guid: 9f60e339721fd054aab3d963c38693b9, type: 3}
       propertyPath: m_Name
-      value: TempHouse (11)
+      value: TempHouse (11) Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f60e339721fd054aab3d963c38693b9, type: 3}
+--- !u!1 &1377904801913803935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9f60e339721fd054aab3d963c38693b9, type: 3}
+  m_PrefabInstance: {fileID: 2296313318738864590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7617627598430493283
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377904801913803935}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049774732, y: 0.06439646, z: 0.06034021}
+  m_Center: {x: 0, y: 2.1437155e-16, z: 0.030170105}
