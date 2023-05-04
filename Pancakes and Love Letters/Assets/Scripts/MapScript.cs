@@ -15,6 +15,7 @@ private void Generate(){
     for(int i = 0; i < spawnLocation.Length; i++){
         int ranNum = Random.Range(0, buildingPrefabs.Length);
         GameObject building = Instantiate(buildingPrefabs[ranNum], spawnLocation[i].position, buildingPrefabs[ranNum].transform.rotation);
+        building.transform.rotation = spawnLocation[i].transform.rotation;
         building.transform.SetParent(spawnLocation[i]);
     }
 }
