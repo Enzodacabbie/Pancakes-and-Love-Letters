@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
     Vector3 moveDirection;
     Rigidbody rb;
 
+    [Header("Animation")]
+    [SerializeField] Animator chefAnimator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +59,16 @@ public class PlayerController : MonoBehaviour
 
     private void MovePlayer()
     {
+        // Checks if input is pressed then plays animation
+        if (horizontalInput != 0 || verticalInput != 0)
+        {
+            chefAnimator.SetBool("isWalking", true);
+        }
+        else
+        {
+            chefAnimator.SetBool("isWalking", false);
+        }
+
         //Get vector for the inputs
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
         
