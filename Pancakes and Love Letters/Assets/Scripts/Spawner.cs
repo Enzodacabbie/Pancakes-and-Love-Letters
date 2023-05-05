@@ -19,6 +19,7 @@ public class Spawner : MonoBehaviour
 
     public void SpawnFood()
     {
-        Instantiate(spawnobject);
+        Instantiate(spawnobject,this.transform);
+        Debug.Log("created " + spawnobject);
     }
 }
