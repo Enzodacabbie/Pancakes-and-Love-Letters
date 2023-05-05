@@ -9,7 +9,12 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: LiberationSans SDF Material
   m_Shader: {fileID: 4800000, guid: fe393ace9b354375a9cb14cdbbc28be4, type: 3}
+<<<<<<< HEAD
+  m_ValidKeywords:
+  - OUTLINE_ON
+=======
   m_ValidKeywords: []
+>>>>>>> 1da78ea7b95eebe8fa771e49bd8d407a74bc197f
   m_InvalidKeywords: []
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -59,8 +64,13 @@ Material:
     - _WeightNormal: 0
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+<<<<<<< HEAD
+    - _FaceColor: {r: 0.24313724, g: 0.74509805, b: 0.5936618, a: 1}
+    - _OutlineColor: {r: 0.1538804, g: 0.5495323, b: 0.6132076, a: 1}
+=======
     - _FaceColor: {r: 1, g: 0, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+>>>>>>> 1da78ea7b95eebe8fa771e49bd8d407a74bc197f
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_BuildTextureStacks: []
 --- !u!114 &11400000
