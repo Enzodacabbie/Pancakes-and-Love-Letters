@@ -23,6 +23,7 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         Play("stage2");
+        Play("rag");
     }
 
     public void Play(string name)
