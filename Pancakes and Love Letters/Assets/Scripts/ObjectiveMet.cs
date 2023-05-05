@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class ObjectiveMet : MonoBehaviour
 {
-    public bool metObjective;
+    public static bool metObjective;
 
     // Start is called before the first frame update
     void Start()
     {
         metObjective = false;
+    }
+
+    void Update()
+    {
+        if (metObjective)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 
     void OnTriggerEnter(Collider col)
