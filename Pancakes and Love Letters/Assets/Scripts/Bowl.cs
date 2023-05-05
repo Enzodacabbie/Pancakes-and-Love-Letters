@@ -16,8 +16,9 @@ public class Bowl : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter()
+    public void OnTriggerEnter(Collider other)
     {
         Debug.Log("added ingredient");
+
     }
 }
