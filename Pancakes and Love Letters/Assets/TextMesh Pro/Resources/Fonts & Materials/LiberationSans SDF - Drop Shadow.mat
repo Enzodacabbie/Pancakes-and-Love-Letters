@@ -2,16 +2,24 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
+<<<<<<< HEAD
   serializedVersion: 8
+=======
+  serializedVersion: 6
+>>>>>>> 1da78ea7b95eebe8fa771e49bd8d407a74bc197f
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LiberationSans SDF - Drop Shadow
   m_Shader: {fileID: 4800000, guid: fe393ace9b354375a9cb14cdbbc28be4, type: 3}
+<<<<<<< HEAD
   m_ValidKeywords:
   - UNDERLAY_ON
   m_InvalidKeywords: []
+=======
+  m_ShaderKeywords: OUTLINE_ON UNDERLAY_ON
+>>>>>>> 1da78ea7b95eebe8fa771e49bd8d407a74bc197f
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -34,14 +42,22 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
+<<<<<<< HEAD
         m_Texture: {fileID: 28684132378477856, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+=======
+        m_Texture: {fileID: 28684132378477856, guid: 8f586378b4e144a9851e7b34d9b748ee,
+          type: 2}
+>>>>>>> 1da78ea7b95eebe8fa771e49bd8d407a74bc197f
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+<<<<<<< HEAD
     m_Ints: []
+=======
+>>>>>>> 1da78ea7b95eebe8fa771e49bd8d407a74bc197f
     m_Floats:
     - _Ambient: 0.5
     - _Bevel: 0.5
@@ -52,7 +68,10 @@ Material:
     - _BumpFace: 0
     - _BumpOutline: 0
     - _ColorMask: 15
+<<<<<<< HEAD
     - _CullMode: 0
+=======
+>>>>>>> 1da78ea7b95eebe8fa771e49bd8d407a74bc197f
     - _Diffuse: 0.5
     - _DiffusePower: 1
     - _FaceDilate: 0.1
@@ -107,4 +126,7 @@ Material:
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
+<<<<<<< HEAD
   m_BuildTextureStacks: []
+=======
+>>>>>>> 1da78ea7b95eebe8fa771e49bd8d407a74bc197f
