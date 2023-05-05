@@ -7,16 +7,16 @@ public class SceneSwitcher : MonoBehaviour
 {
     public void TitleScene()
     {
-        SceneManager.LoadScene("Title");
+        SceneManager.LoadScene("TitleMenu");
     }
 
     public void Overworld()
     {
-
+        SceneManager.LoadScene("Overworld");
     }
 
     public void MiniGame()
     {
-
+        SceneManager.LoadScene("Cooking");
     }
 }
