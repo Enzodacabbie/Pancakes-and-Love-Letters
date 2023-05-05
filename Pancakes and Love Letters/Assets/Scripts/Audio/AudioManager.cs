@@ -22,7 +22,7 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        // Insert Here
+        Play("stage2");
     }
 
     public void Play(string name)
