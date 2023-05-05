@@ -23,7 +23,7 @@ public class NPC : MonoBehaviour
     {
         walkPointSet = false;
         timerWalking = timeWalk;
-        animator.SetBool("isWalking", false);
+        animator.SetBool("isWalking", true);
     }
 
     // Update is called once per frame
