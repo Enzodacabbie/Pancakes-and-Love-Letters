@@ -20,6 +20,15 @@ public class ChangeScene : MonoBehaviour
 
     public void change(string name)
     {
+        if (name.Contains("quit"))
+        {
+            
+        }
         SceneManager.LoadScene(name);
+    }
+
+    public void quit()
+    {
+        Application.Quit();
     }
 }
